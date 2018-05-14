@@ -1,0 +1,11 @@
+{
+  "name": "npm-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "handlebars": "^4.0.11"
+  }
+}

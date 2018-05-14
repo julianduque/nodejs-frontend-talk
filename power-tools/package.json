@@ -1,0 +1,26 @@
+{
+  "name": "npm-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "author": "",
+  "license": "ISC",
+  "scripts": {
+    "build": "browserify index.js -t hbsify -t [ babelify --presets [ es2015 ] ] | uglifyjs | minify --js > index.min.js",
+    "build-dev": "browserify index.js -t hbsify -t [ babelify --presets [ es2015 ] ] > index.min.js"
+  },
+  "dependencies": {
+    "handlebars": "^4.0.5",
+    "jquery": "^3.1.0"
+  },
+  "devDependencies": {
+    "babel": "^6.5.2",
+    "babel-core": "^6.26.3",
+    "babel-preset-es2015": "^6.9.0",
+    "babelify": "^8.0.0",
+    "browserify": "^16.2.2",
+    "hbsify": "^1.0.1",
+    "minify": "^3.0.5",
+    "uglify-js": "^3.3.24"
+  }
+}
